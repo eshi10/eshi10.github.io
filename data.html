@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://kit.fontawesome.com/5f10c058c5.js" crossorigin="anonymous"></script>
+</head>
+<div class="scrollmenu">
+  <a href="index.html" accesskey="h" title="Human Pangenome (Alt + H)">
+    <img src="img/Logo.png" alt="logo" height="40" class="logo"> </a>
+  <div class="topnav-right">
+    <div class="dropdown">
+      <a href="aboutus.html" class="dropbtn">About Us</a>
+      <div class="dropdown-content">
+        <a href="about/consortium.html">Consortium Organization</a><br>
+        <a href="about/advisory.html">Advisory Board</a><br>
+        <a href="about/partners.html">Partners</a><br>
+        <a href="about/assoc.html">Associate Members</a><br>
+        <a href="about/ga4gh.html">GA4GH Commitments</a><br>
+        <a href="about/covid.html">COVID-19 Response</a><br>
+        <a href="about/rsr.html">Response to Systematic Racism </a>
+      </div>
+    </div>
+    <a href="data.html">Data</a>
+    <a href="tech.html">Technology</a>
+    <a href="sample.html">Samples</a>
+    <a href="publ.html">Publications</a>
+    <a href="contact.html">Contact</a>
+    <a href="http://wiki.humanpangenome.org/" target="_blank"><button id="wiki"> Wiki Login </button></a>
+  </div>
+</div>
+<main>
+  <style>
+    p,
+    li {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-block: 20px 5px;
+    }
+
+    .small {
+      font-size: 10px;
+      color: rgb(100, 112, 245);
+      margin: 0;
+    }
+  </style>
+
+  <div class="row">
+    <div class="column pad4">insert img here</div>
+    <div class="column pad4">
+      <h1>Data</h1>
+      <p>The Human Pangenome Reference
+        Consortium generates raw sequencing data,
+        high-quality assemblies, and pangenomes.
+        All data generated is open, publicly
+        accessible, and can be downloaded or used
+        in AWS, GCP, AnVIL, or locally. </p>
+    </div>
+  </div>
+
+  <h1>Data Availability</h1>
+  <p><b>Sequencing data, assemblies, and pangenomes are stored in publicly accesible cloud buckets, the AnVIL data
+      ecosystem,
+      and in SRA/ENA/DDBJ</b></p>
+
+  <p>Data is uploaded to both AWS S3 and Google Cloud buckets. GitHub repositories have been created and include details
+    about the data generation as well as index files with locations of the data stored in S3 and GCP. The HPRC S3 bucket
+    does not charge egress fees making it a good option if you would like to download data to your local machine</p>
+
+  <p>AnVIL is a cloud environment that allows you to view the data organized in convenient data tables that refer to
+    copies of the data in GCP. AnVIL also includes a workflow runner so you can analyze the data withough.</p>
+
+  <p>All data is also uploaded to INSDCs (SRA/ENA/DDBJ) in BioProjects for sequencing data, assemblies, and pangenomes
+  </p>
+
+  <div class="row">
+    <div class="column pad4">
+      <h1>Sequencing Data</h1>
+      <p>The HPRC produces:
+        <li>PacBio HiF</li>
+        <li>Oxford Nanopore</li>
+        <li>Omni-C/Hi-C</li>
+        <br>
+        In addition, we include high coverage Illumina data produced by the NYGC for parents and children (when
+        available).
+        <br><br>
+        If you would like to download the files, data indexes are available in the GitHub repository.
+      </p>
+    </div>
+    <div class="column pad4">
+      <h3>The AnVIL</h3>
+      <p class="small">Public workspace (requires AnVIL account)</p>
+      <h3>GitHub</h3>
+      <p class="small">Repository with data indexes for GCP and AWS files</p>
+      <h3>Sequence Read Archive</h3>
+      <p class="small">BioProject with INSDC copies of raw sequencing data</p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="column pad4">
+      <h3>The AnVIL</h3>
+      <p class="small">Public workspace (requires AnVIL account)</p>
+      <h3>GitHub</h3>
+      <p class="small">Assembly repository with indexes for AWS & GCP files</p>
+      <h3>Sequence Read Archive</h3>
+      <p class="small">BioProject for HPRC assemblies</p>
+      <h3>UCSC Genome Browser</h3>
+      <p class="small">Browser hub with year 1 assemblies & annotations
+      </p>
+      <h3>ENSEMBL</h3>
+      <p class="small">Project page containing assemblies & gene annotations</p>
+    </div>
+    <div class="column pad4">
+      <h1>Assemblies</h1>
+      <p>
+        Assemblies produced with Hifiasm are available alongside annotations for the assemblies.
+        <br><br>
+        If you would like to download the files, data indexes are available in the GitHub repository
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column pad4">
+      <h1>Pangenomes</h1>
+      <p>The HPRC has released pangenomes from its year 1 data. Currently there are three main approaches:
+        <li>Minigrapp</li>
+        <li>Minigraph-CACTUS</li>
+        <li>PangenomeGraphBuilder(PGGB)</li>
+        <br><br>
+        Each pangenome has different strengths and weaknessness. If you do not know which pangenome best suits your
+        needs, see the GitHub repository.
+      </p>
+    </div>
+    <div class="column pad4">
+      <h3>The AnVIL</h3>
+      <p class="small">Public workspace (requires AnVIL account)</p>
+      <h3>GitHub</h3>
+      <p class="small">Repository with data indexes for GCP and AWS files</p>
+      <h3>European Nucleotide Archive</h3>
+      <p class="small">BioProject with pangenomes</p>
+    </div>
+  </div>
+</main>
+<div class="icon">
+  <br>
+  <a href="https://twitter.com/HumanPangenome" target="_blank"><i style='font-size:48px;color:rgb(0, 172, 238)'
+      class='fab'>&#xf081;</i></a>
+  <a href="youtube.com" target="_blank"><i style='font-size:48px;color:rgb(255, 0, 0)' class='fab'>&#xf431;</i></a>
+  <a href="github.com" target="_blank"><i style='font-size:48px;color:rgb(110, 84, 148)' class='fab'>&#xf092;</i></a>
+  <br><br>
+</div>
+<div class="footer-basic">
+  <footer>
+    <div class="social">
+
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="list-inline-item"><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li class="list-inline-item"><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <p class="copyright">© 2022 Human Pangenome Reference Consortium</p>
+    </div>
+  </footer>
+</div>
+
+
+</html>
