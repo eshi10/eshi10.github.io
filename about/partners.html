@@ -2,16 +2,21 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Human Pangenome</title>
+  <link rel="icon" href="/Logo2.ico" type="image/x-icon">
   <link href="/style.css" rel="stylesheet" type="text/css" />
-
   <script src="https://kit.fontawesome.com/5f10c058c5.js" crossorigin="anonymous"></script>
 </head>
 <div class="scrollmenu">
   <a href="/index.html" accesskey="h" title="Human Pangenome (Alt + H)">
-    <img src="/img/Logo.png" alt="logo" height="40" class="logo"> </a>
+    <img src="/img/Logo.png" alt="logo" height="40" class="logo">
+    <p> Human Pangenome Reference Center</p>
+  </a>
   <div class="topnav-right">
     <div class="dropdown">
-      <a href="/aboutus.html" class="dropbtn">About Us</a>
+      <a href="/aboutus.html" class="dropbtn"><p>About Us</p></a>
       <div class="dropdown-content">
         <a href="consortium.html">Consortium Organization</a><br>
         <a href="advisory.html">Advisory Board</a><br>
@@ -22,12 +27,23 @@
         <a href="rsr.html">Response to Systematic Racism </a>
       </div>
     </div>
-    <a href="/data.html">Data</a>
-    <a href="/tech.html">Technology</a>
-    <a href="/sample.html">Samples</a>
-    <a href="/publ.html">Publications</a>
-    <a href="/contact.html">Contact</a>
-    <a href="http://wiki.humanpangenome.org/" target="_blank"><button id="wiki"> Wiki Login </button></a>
+    <a href="/data.html">
+      <p>Data</p>
+    </a>
+    <a href="/tech.html">
+      <p>Technology</p>
+    </a>
+    <a href="/sample.html">
+      <p>Samples</p>
+    </a>
+    <a href="/publ.html">
+      <p>Publications</p>
+    </a>
+    <a href="/contact.html">
+      <p>Contact</p>
+    </a>
+    <form action="http://wiki.humanpangenome.org/" method="get" target="_blank"> <button type="submit" id="wiki"> Wiki
+        Login </button></form>
   </div>
 </div>
 
@@ -35,6 +51,7 @@
   h2 {
     text-align: left;
   }
+  img{width:100%}
 </style>
 
 <body>
@@ -51,7 +68,7 @@
       <li>Many of the samples used in the reference genome are made available to researchers through the Coriell
         Institute.</li>
     </ul>
-    <p><img loading="lazy" src="/img/coriell_logo.png" alt="coriell" />
+    <p><img class="test" loading="lazy" src="/img/coriell_logo.png" alt="coriell" />
     </p>
 
   </main>

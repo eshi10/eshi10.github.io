@@ -2,16 +2,23 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Human Pangenome</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/Logo.png" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-
   <script src="https://kit.fontawesome.com/5f10c058c5.js" crossorigin="anonymous"></script>
 </head>
 <div class="scrollmenu">
   <a href="index.html" accesskey="h" title="Human Pangenome (Alt + H)">
-    <img src="img/Logo.png" alt="logo" height="40" class="logo"> </a>
+    <img src="img/Logo.png" alt="logo" height="40" class="logo">
+    <p> Human Pangenome Reference Center</p>
+  </a>
   <div class="topnav-right">
     <div class="dropdown">
-      <a href="aboutus.html" class="dropbtn">About Us</a>
+      <a href="aboutus.html" class="dropbtn">
+        <p>About Us</p>
+      </a>
       <div class="dropdown-content">
         <a href="about/consortium.html">Consortium Organization</a><br>
         <a href="about/advisory.html">Advisory Board</a><br>
@@ -22,23 +29,30 @@
         <a href="about/rsr.html">Response to Systematic Racism </a>
       </div>
     </div>
-    <a href="data.html">Data</a>
-    <a href="tech.html">Technology</a>
-    <a href="sample.html">Samples</a>
-    <a href="publ.html">Publications</a>
-    <a href="contact.html">Contact</a>
-    <a href="http://wiki.humanpangenome.org/" target="_blank"><button id="wiki"> Wiki Login </button></a>
+    <a href="data.html">
+      <p>Data</p>
+    </a>
+    <a href="tech.html">
+      <p>Technology</p>
+    </a>
+    <a href="sample.html">
+      <p>Samples</p>
+    </a>
+    <a href="publ.html">
+      <p>Publications</p>
+    </a>
+    <a href="contact.html">
+      <p>Contact</p>
+    </a>
+    <form action="http://wiki.humanpangenome.org/" method="get" target="_blank"> <button type="submit" id="wiki">Wiki
+        Login</button> </form>
   </div>
 </div>
+
 <main>
   <style>
-    p,
-    li {
-      font-size: 18px;
-    }
-
     h3 {
-      font-size: 25px;
+      font-size: 23px;
       margin-block: 20px 5px;
     }
 
@@ -50,7 +64,9 @@
   </style>
 
   <div class="row">
-    <div class="column pad4">insert img here</div>
+    <div class="column pad4">
+      <img src="img5/dd1.png" alt="test" width=100% class="centerimg test" />
+    </div>
     <div class="column pad4">
       <h1>Data</h1>
       <p>The Human Pangenome Reference
@@ -61,6 +77,7 @@
         in AWS, GCP, AnVIL, or locally. </p>
     </div>
   </div>
+  <img src="img5/t3.png" alt="test" width=30% class="centerimg test pad5" />
 
   <h1>Data Availability</h1>
   <p><b>Sequencing data, assemblies, and pangenomes are stored in publicly accesible cloud buckets, the AnVIL data
@@ -76,6 +93,7 @@
 
   <p>All data is also uploaded to INSDCs (SRA/ENA/DDBJ) in BioProjects for sequencing data, assemblies, and pangenomes
   </p>
+  <img src="img5/t4.png" alt="test" width=30% class="centerimg test pad5" />
 
   <div class="row">
     <div class="column pad4">
@@ -92,29 +110,77 @@
       </p>
     </div>
     <div class="column pad4">
-      <h3>The AnVIL</h3>
-      <p class="small">Public workspace (requires AnVIL account)</p>
-      <h3>GitHub</h3>
-      <p class="small">Repository with data indexes for GCP and AWS files</p>
-      <h3>Sequence Read Archive</h3>
-      <p class="small">BioProject with INSDC copies of raw sequencing data</p>
+
+      <div class="row">
+        <div class="column">
+          <h3>The AnVIL</h3>
+          <p class="small">Public workspace (requires AnVIL account)</p>
+        </div>
+        <div class="column"><img src="img5/sd1.png" alt="test" class="dataimg" /></div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>GitHub</h3>
+          <p class="small">Repository with data indexes for GCP and AWS files</p>
+        </div>
+        <div class="column"><img src="img5/sd2.png" alt="test" class="dataimg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>Sequence Read Archive</h3>
+          <p class="small">BioProject with INSDC copies of raw sequencing data</p>
+        </div>
+        <div class="column"><img src="img5/sd3.png" alt="test" class="dataimg" />
+        </div>
+      </div>
     </div>
   </div>
 
-
+  <img src="img5/t4.png" alt="test" width=30% class="centerimg test pad5" />
   <div class="row">
     <div class="column pad4">
-      <h3>The AnVIL</h3>
-      <p class="small">Public workspace (requires AnVIL account)</p>
-      <h3>GitHub</h3>
-      <p class="small">Assembly repository with indexes for AWS & GCP files</p>
-      <h3>Sequence Read Archive</h3>
-      <p class="small">BioProject for HPRC assemblies</p>
-      <h3>UCSC Genome Browser</h3>
-      <p class="small">Browser hub with year 1 assemblies & annotations
-      </p>
-      <h3>ENSEMBL</h3>
-      <p class="small">Project page containing assemblies & gene annotations</p>
+      <div class="row">
+        <div class="column"><img src="img5/sd1.png" alt="test" class="dataimg" /></div>
+        <div class="column">
+          <h3>The AnVIL</h3>
+          <p class="small">Public workspace (requires AnVIL account)</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><img src="img5/sd2.png" alt="test" class="dataimg" /></div>
+        <div class="column">
+          <h3>GitHub</h3>
+          <p class="small">Assembly repository with indexes for AWS & GCP files</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><img src="img5/sd3.png" alt="test" class="dataimg" /></div>
+        <div class="column">
+          <h3>Sequence Read Archive</h3>
+          <p class="small">BioProject for HPRC assemblies</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><img src="img5/sd4.png" alt="test" class="dataimg" /></div>
+        <div class="column">
+          <h3>UCSC Genome Browser</h3>
+          <p class="small">Browser hub with year 1 assemblies & annotations
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column"><img src="img5/sd5.png" alt="test" class="dataimg" /></div>
+        <div class="column">
+          <h3>ENSEMBL</h3>
+          <p class="small">Project page containing assemblies & gene annotations</p>
+        </div>
+      </div>
+
     </div>
     <div class="column pad4">
       <h1>Assemblies</h1>
@@ -125,7 +191,7 @@
       </p>
     </div>
   </div>
-
+  <img src="img5/t4.png" alt="test" width=30% class="centerimg test pad5" />
   <div class="row">
     <div class="column pad4">
       <h1>Pangenomes</h1>
@@ -139,21 +205,47 @@
       </p>
     </div>
     <div class="column pad4">
-      <h3>The AnVIL</h3>
-      <p class="small">Public workspace (requires AnVIL account)</p>
-      <h3>GitHub</h3>
-      <p class="small">Repository with data indexes for GCP and AWS files</p>
-      <h3>European Nucleotide Archive</h3>
-      <p class="small">BioProject with pangenomes</p>
+      <div class="row">
+        <div class="column">
+          <h3>The AnVIL</h3>
+          <p class="small">Public workspace (requires AnVIL account) </p>
+        </div>
+        <div class="column">
+          <img src="img5/sd1.png" alt="test" class="dataimg" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h3>GitHub</h3>
+          <p class="small">Repository with data indexes for GCP and AWS files</p>
+        </div>
+        <div class="column"><img src="img5/sd2.png" alt="test" class="dataimg" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h3>European Nucleotide Archive</h3>
+          <p class="small">BioProject with pangenomes</p>
+        </div>
+        <div class="column"><img src="img5/sd6.png" alt="test" class="dataimg" />
+        </div>
+      </div>
     </div>
   </div>
+
 </main>
+
+
 <div class="icon">
   <br>
   <a href="https://twitter.com/HumanPangenome" target="_blank"><i style='font-size:48px;color:rgb(0, 172, 238)'
       class='fab'>&#xf081;</i></a>
-  <a href="https://youtube.com" target="_blank"><i style='font-size:48px;color:rgb(255, 0, 0)' class='fab'>&#xf431;</i></a>
-  <a href="https://github.com" target="_blank"><i style='font-size:48px;color:rgb(110, 84, 148)' class='fab'>&#xf092;</i></a>
+  <a href="https://youtube.com" target="_blank"><i style='font-size:48px;color:rgb(255, 0, 0)'
+      class='fab'>&#xf431;</i></a>
+  <a href="https://github.com" target="_blank"><i style='font-size:48px;color:rgb(110, 84, 148)'
+      class='fab'>&#xf092;</i></a>
   <br><br>
 </div>
 <div class="footer-basic">

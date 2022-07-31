@@ -12,15 +12,28 @@ body {
 main,footer{
   max-width: 800px;
   margin: auto;}
-.logo{width:40px}
+.logo{width:40px;margin-right: 8px;}
 .micon {width: 50%;margin-block: 0px 30px;margin-left: 60px;}
-img{width:100%}
+.micon2 {width: 60%;margin-block: 0px 30px;margin-left: 60px;}
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+.dataimg{
+  width:100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
 h1, h2{text-align: center;margin-top: 7%}
 h1{font-size: 35px;}
 .row {display: flex;}
 .column {flex: 33.33%}
 .pad3{margin:40px}
 .pad4{margin:25px}
+.pad5{padding: 25px;}
 #wiki{
   border-radius:8px;
   border: none;
@@ -30,8 +43,10 @@ h1{font-size: 35px;}
   font-size: 15px;
   text-align: center;
   text-decoration: none;
-  transition-duration: 0.2s;
-  cursor: pointer;
+}
+#wiki:hover {
+  color: rgb(229, 233, 235);
+  background-color:rgb(51, 121, 227);
 }
 .rcorners1 {
   border-radius: 25px;
@@ -81,39 +96,26 @@ h1{font-size: 35px;}
 .button3:hover {background-color: rgb(91, 173, 81);color: #fff;}
 .buttonpad{margin-right:10px}
 div.scrollmenu {
+  font-size: 15px;
   width: 100%;
   background-color: #333;
   overflow: hidden;
 }
-
-div.scrollmenu a {
+div.scrollmenu a,form {
   display: inline-flex;
   color: #fff;
   text-align: center;
   margin: auto;
-  padding: 7px 10px;
+  padding: 7px 15px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 div.scrollmenu a:hover {
-  background-color: #777;
+  background-color:rgba(255,255,255,.3);
 }
 .topnav-right {
-  margin-top: 5px;
   margin-right:5px;
   float: right;
-}
-.test{
-    animation: transitionIn 1s;
-}
-@keyframes transitionIn{
-    from{
-        opacity:0;
-        transform: rotateX(-10deg);}
-    to{
-        opacity:1;
-        transform: rotateX(0);}
 }
 a:link {
   color: rgb(103, 156, 26);
@@ -131,7 +133,6 @@ a:active {
 
 .dropbtn {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -160,16 +161,25 @@ div.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;width:92.1%}
+.dropdown-content a:hover {background-color: #f1f1f1;width:88.1%}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-.icon{max-width: 800px;
+.test{
+    animation: transitionIn 2s;
+}
+@keyframes transitionIn{
+    0%{
+        opacity:0;}
+    100%{
+        opacity:1;}
+}
+.icon{
+  max-width: 800px;
   margin: auto;
-     text-align: center;
+  text-align: center;
+  padding-top: 30px;
      }
 .icon a{margin:5px}
 .icon a:hover{opacity: .8;}
